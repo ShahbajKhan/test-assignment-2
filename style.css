@@ -1,36 +1,42 @@
-*{
+* {
     border: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.banner{
+
+.banner {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 50px;
 }
-.banner-img img{
+
+.banner-img img {
     width: 80%;
 }
-.gallery{
+
+.gallery {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-.single-card{
+
+.single-card {
     border: 2px solid red;
     width: 100%;
 }
-.single-card img{
+
+.single-card img {
     width: 100%;
 }
 
-button{
+button {
     background-color: thistle;
     padding: 20px;
     font-weight: 600;
     border-radius: 10px;
 }
-.footer-control{
+
+.footer-control {
     padding-top: 15%;
     margin-top: 50px;
     background-color: blue;
@@ -38,12 +44,14 @@ button{
     color: white;
     height: 200px;
 }
-@media only screen and (max-width: 600px){
-    .gallery, .banner{
-        grid-template-columns: repeat(1,1fr);
+
+@media only screen and (max-width: 600px) {
+    .gallery, .banner {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .single-card, .banner-desc, .banner-img{
+
+    .single-card, .banner-desc, .banner-img {
         width: 80%;
         margin: 0 auto;
     }
-}
+} 
